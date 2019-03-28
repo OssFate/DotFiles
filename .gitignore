@@ -1,0 +1,6 @@
+*
+
+# Add the files
+!.vimrc
+!.config/i3/config
+!.gitignore
