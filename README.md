@@ -8,3 +8,6 @@ Just my config files on linux, will add new ones everytime I add something.
 - [ ] Change compton config
 - [ ] Change fonts
 - [ ] More to come... 
+
+
+Just testing something
