@@ -3,6 +3,10 @@
 # Add the files
 !.vimrc
 !.config/i3/config
+!.config/alacritty/alacritty.yml
+
+
+# Based Git
 !.gitignore
 !LICENSE
 !README.md
