@@ -1,10 +1,17 @@
 *
 
-# Add the files
+# Vim
 !.vimrc
+
+# i3wm
 !.config/i3/config
+
+# Alacritty
 !.config/alacritty/alacritty.yml
 
+# Polybar
+!.config/polybar/config
+!.config/polybar/launch.sh
 
 # Based Git
 !.gitignore
