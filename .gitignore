@@ -9,10 +9,6 @@
 # Alacritty
 !.config/alacritty/alacritty.yml
 
-# Polybar
-!.config/polybar/config
-!.config/polybar/launch.sh
-
 # Based Git
 !.gitignore
 !LICENSE

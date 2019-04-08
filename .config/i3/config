@@ -166,21 +166,21 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-#bar {
-#	i3bar_command i3bar -t
-#	status_command i3status
+bar {
+	i3bar_command i3bar -t
+	status_command i3status
 	# status_command polybar
 	# status_command i3status-rs ~/.config/i3status-rs/config.toml
-#	position top
-#	colors {
+	position top
+	colors {
 		# separator #666666
-#		background #00000099
+		background #00000099
 		# statusline #dddddd
 		# focused_workspace #0088CC #0088CC #FFFFFF
 		# active_workspace #333333 #333333 #FFFFFF
-#	}
-#}
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+	}
+}
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Own Config
 default_border pixel 3
