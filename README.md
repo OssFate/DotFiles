@@ -9,4 +9,7 @@ Just my config files on linux, will add new ones everytime I add something.
 - [ ] Change dunst configuration
 - [ ] Change compton config
 - [ ] Change fonts
+  - [X] Added Google Fonts to the system
+  - [ ] Fonts for terminal
+  - [ ] Fonts for i3Bar
 - [ ] More to come... 
