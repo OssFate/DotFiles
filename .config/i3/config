@@ -37,11 +37,12 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+# bindsym $mod+d exec dmenu_run
+
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 # bindsym $mod+j focus left
@@ -198,7 +199,7 @@ smart_borders on
 exec_always --no-startup-id numlockx on
 
 # dunst
-exec --no-startup-id  dunst
+exec --no-startup-id dunst
 
 # Compton
 exec compton -b &
@@ -216,8 +217,9 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # screenshot
-bindsym --release Print exec scrot '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots' -q 100
-bindsym --release Shift+Print exec scrot '%Y-%m-%d_%H.%M.%S_$wx$h.png' -e 'mv $f ~/Pictures/screenshots'
+bindsym --release Print exec scrot -e 'mv $f ~/Pictures/screenshots'
+# bindsym --release Shift+Print exec scrot -e 'mv $f ~/Pictures/screenshots'
+bindsym --release Mod1+Sys_Req exec scrot -ue 'mv $f ~/Pictures/screenshots'
 
 # feh
 exec feh --bg-scale ~/Pictures/.wallpaper.png 
