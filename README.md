@@ -1,7 +1,9 @@
 # DotFiles
+
 Just my config files on linux, will add new ones everytime I add something.
 
 ## TODO
+
 - [X] Changed terminal to Alacritty (gotta customize it a little)
   - [X] Changed colors on terminal
   - [ ] Gotta fix font size and add Inconsolata probably
@@ -13,4 +15,5 @@ Just my config files on linux, will add new ones everytime I add something.
   - [X] Added Google Fonts to the system
   - [ ] Fonts for terminal
   - [ ] Fonts for i3Bar
-- [ ] More to come... 
+- [ ] More to come...
+
