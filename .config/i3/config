@@ -13,7 +13,8 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+#font pango:monospace 10
+font pango:FontAwesome, Inconsolata 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -170,15 +171,20 @@ bindsym $mod+r mode "resize"
 bar {
 	i3bar_command i3bar -t
 	status_command i3status
-	# status_command polybar
-	# status_command i3status-rs ~/.config/i3status-rs/config.toml
 	position top
 	colors {
 		# separator #666666
-		background #00000099
+		# background #00000099
 		# statusline #dddddd
 		# focused_workspace #0088CC #0088CC #FFFFFF
 		# active_workspace #333333 #333333 #FFFFFF
+		separator #666666
+		background #222222
+		statusline #dddddd
+		focused_workspace #0088CC #0088CC #ffffff
+		active_workspace #333333 #333333 #ffffff
+		inactive_workspace #333333 #333333 #888888
+		urgent_workspace #2f343a #900000 #ffffff
 	}
 }
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -205,6 +211,9 @@ exec --no-startup-id dunst
 # Compton
 exec compton -b &
 
+# Screen tearing nvidia
+#exec nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"
+
 # Sound
 #Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +4% #increase sound volume
@@ -226,4 +235,4 @@ bindsym --release Mod1+Sys_Req exec scrot -ue 'mv $f ~/Pictures/screenshots'
 exec feh --bg-scale ~/Pictures/.wallpaper.png 
 
 # xrandr
-exec xrandr --output HDMI-0 --auto --left-of DP-1
+#exec xrandr --output HDMI-0 --auto --left-of DP-1

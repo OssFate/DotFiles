@@ -6,6 +6,9 @@
 # i3wm
 !.config/i3/config
 
+# Compton
+!.config/compton.conf
+
 # Alacritty
 !.config/alacritty/alacritty.yml
 
