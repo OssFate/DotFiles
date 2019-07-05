@@ -6,11 +6,17 @@
 # i3wm
 !.config/i3/config
 
+# i3blocks
+!.config/i3blocks/config
+
 # Compton
 !.config/compton.conf
 
 # Alacritty
 !.config/alacritty/alacritty.yml
+
+# dunst
+!.config/dunst/dunstrc
 
 # Based Git
 !.gitignore
